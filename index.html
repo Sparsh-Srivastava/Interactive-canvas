@@ -47,37 +47,44 @@
         <div class="block">
           <div class="title">Generated Design:</div>
           <div id="output">
-            <div id="email">
-              <div class="element">
-                <label for="emailInput" class="label">Email Id: </label>
+            <div class="container">
+              <div id="email" class="draggable" draggable="true">
+                <div class="element">
+                  <label for="emailInput" class="label">Email Id: </label>
+                  <br />
+                  <input
+                    type="text"
+                    name="emailInput"
+                    id="emailInput"
+                    class="input"
+                  />
+                </div>
+                <div class="element">
+                  <label for="passwordInput" class="label">Password:</label>
+                  <br />
+                  <input
+                    type="password"
+                    name="passwordInput"
+                    id="passwordInput"
+                    class="input"
+                  />
+                </div>
+              </div>
+              <div
+                id="phone"
+                class="draggable"
+                draggable="true"
+                style="display: none"
+              >
+                <label for="phoneInput" class="label">Phone number:</label>
                 <br />
                 <input
-                  type="text"
-                  name="emailInput"
-                  id="emailInput"
+                  type="phone"
+                  name="phoneInput"
+                  id="phoneInput"
                   class="input"
                 />
               </div>
-              <div class="element">
-                <label for="passwordInput" class="label">Password:</label>
-                <br />
-                <input
-                  type="password"
-                  name="passwordInput"
-                  id="passwordInput"
-                  class="input"
-                />
-              </div>
-            </div>
-            <div id="phone" style="display: none">
-              <label for="phoneInput" class="label">Phone number:</label>
-              <br />
-              <input
-                type="phone"
-                name="phoneInput"
-                id="phoneInput"
-                class="input"
-              />
             </div>
             <button id="button">Log In</button>
             <p id="subtext">New user? <a href="#">Sign Up</a></p>

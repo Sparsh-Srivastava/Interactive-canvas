@@ -72,3 +72,14 @@ input.checkbox {
   width: 20px;
   height: 20px;
 }
+
+.draggable {
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid black;
+  cursor: move;
+}
+
+.draggable.dragging {
+  opacity: 0.5;
+}
