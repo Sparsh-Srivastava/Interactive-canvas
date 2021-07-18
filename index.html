@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Interactive Canvas</title>
+  </head>
+  <body>
+    <!-- <p>User Choice:</p>
+    <label for="email">Email</label>
+    <input type="checkbox" name="email" id="emailCheckbox" onclick="email()" />
+
+    <div id="email" style="display: none">
+      <label for="emailInput">Enter your email: </label>
+      <input type="text" name="emailInput" id="emailInput" />
+      <label for="passwordInput">Enter your Password: </label>
+      <input type="password" name="passwordInput" id="passwordInput" />
+    </div> -->
+    <div id="project">
+      <div id="margin"></div>
+      <div id="data">
+        <div class="block">
+          <div class="title">User Choice:</div>
+          <div id="payload">
+            <input
+              type="checkbox"
+              name="email"
+              id="emailInput"
+              class="checkbox"
+              onclick="email()"
+              checked
+            />
+            <label for="email">Email</label>
+            <br />
+            <input
+              type="checkbox"
+              name="phone"
+              id="phoneInput"
+              class="checkbox"
+              onclick="phone()"
+            />
+            <label for="phone">Phone Number</label>
+          </div>
+        </div>
+        <div class="block">
+          <div class="title">Generated Design:</div>
+          <div id="output">
+            <div id="email">
+              <div class="element">
+                <label for="emailInput" class="label">Email Id: </label>
+                <br />
+                <input
+                  type="text"
+                  name="emailInput"
+                  id="emailInput"
+                  class="input"
+                />
+              </div>
+              <div class="element">
+                <label for="passwordInput" class="label">Password:</label>
+                <br />
+                <input
+                  type="password"
+                  name="passwordInput"
+                  id="passwordInput"
+                  class="input"
+                />
+              </div>
+            </div>
+            <div id="phone" style="display: none">
+              <label for="phoneInput" class="label">Phone number:</label>
+              <br />
+              <input
+                type="phone"
+                name="phoneInput"
+                id="phoneInput"
+                class="input"
+              />
+            </div>
+            <button id="button">Log In</button>
+            <p id="subtext">New user? <a href="#">Sign Up</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
