@@ -26,18 +26,17 @@ body {
 
 #email {
   padding: 1vh;
-  border: dashed 2px #ccc;
   margin: 1vh;
 }
 
 #phone {
   padding: 1vh;
-  border: dashed 2px #ccc;
   margin: 1vh;
 }
 
 #button {
   width: 100%;
+  height: 5vh;
 }
 
 #subtext {
@@ -76,8 +75,7 @@ input.checkbox {
 .draggable {
   padding: 1rem;
   background-color: white;
-  border: 1px solid black;
-  cursor: move;
+  cursor: grab;
 }
 
 .draggable.dragging {

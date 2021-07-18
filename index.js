@@ -1,20 +1,40 @@
 function email() {
-  var checkBox = document.getElementById("emailInput");
-  var data = document.getElementById("email");
-  if (checkBox.checked == true) {
-    data.style.display = "block";
+  var emailInput = document.getElementById("emailInput");
+  var phoneInput = document.getElementById("phoneInput");
+  var phone = document.getElementById("phone");
+  var email = document.getElementById("email");
+  if (emailInput.checked == true) {
+    email.style.display = "block";
   } else {
-    data.style.display = "none";
+    email.style.display = "none";
+  }
+
+  if (phoneInput.checked == true && emailInput.checked == true) {
+    email.style.border = "dashed 2px #ccc";
+    phone.style.border = "dashed 2px #ccc";
+  } else {
+    email.style.border = "none";
+    phone.style.border = "none";
   }
 }
 
 function phone() {
-  var checkBox = document.getElementById("phoneInput");
-  var data = document.getElementById("phone");
-  if (checkBox.checked == true) {
-    data.style.display = "block";
+  var phoneInput = document.getElementById("phoneInput");
+  var emailInput = document.getElementById("emailInput");
+  var email = document.getElementById("email");
+  var phone = document.getElementById("phone");
+  if (phoneInput.checked == true) {
+    phone.style.display = "block";
   } else {
-    data.style.display = "none";
+    phone.style.display = "none";
+  }
+
+  if (phoneInput.checked == true && emailInput.checked == true) {
+    email.style.border = "dashed 2px #ccc";
+    phone.style.border = "dashed 2px #ccc";
+  } else {
+    email.style.border = "none";
+    phone.style.border = "none";
   }
 }
 
