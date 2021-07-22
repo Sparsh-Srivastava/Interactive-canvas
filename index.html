@@ -4,20 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Interactive Canvas</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.10.2/Sortable.min.js"
+      integrity="sha512-ELgdXEUQM5x+vB2mycmnSCsiDZWQYXKwlzh9+p+Hff4f5LA+uf0w2pOp3j7UAuSAajxfEzmYZNOOLQuiotrt9Q=="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <!-- <p>User Choice:</p>
-    <label for="email">Email</label>
-    <input type="checkbox" name="email" id="emailCheckbox" onclick="email()" />
-
-    <div id="email" style="display: none">
-      <label for="emailInput">Enter your email: </label>
-      <input type="text" name="emailInput" id="emailInput" />
-      <label for="passwordInput">Enter your Password: </label>
-      <input type="password" name="passwordInput" id="passwordInput" />
-    </div> -->
     <div id="project">
       <div id="margin"></div>
       <div id="data">
@@ -47,9 +42,9 @@
         <div class="block">
           <div class="title">Generated Design:</div>
           <div id="output">
-            <div class="container">
-              <div id="email" class="draggable" draggable="true">
-                <div class="element">
+            <div class="container list-group" id="player-list">
+              <div id="email" class="draggable list-group-item">
+                <div class="details">
                   <label for="emailInput" class="label">Email Id: </label>
                   <br />
                   <input
@@ -59,7 +54,7 @@
                     class="input"
                   />
                 </div>
-                <div class="element">
+                <div class="details">
                   <label for="passwordInput" class="label">Password:</label>
                   <br />
                   <input
@@ -72,18 +67,19 @@
               </div>
               <div
                 id="phone"
-                class="draggable"
-                draggable="true"
+                class="draggable list-group-item"
                 style="display: none"
               >
-                <label for="phoneInput" class="label">Phone number:</label>
-                <br />
-                <input
-                  type="number"
-                  name="phoneInput"
-                  id="phoneInput"
-                  class="input"
-                />
+                <div class="details">
+                  <label for="phoneInput" class="label">Phone number:</label>
+                  <br />
+                  <input
+                    type="number"
+                    name="phoneInput"
+                    id="phoneInput"
+                    class="input"
+                  />
+                </div>
               </div>
             </div>
             <button id="button">Log In</button>

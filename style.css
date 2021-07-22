@@ -81,3 +81,44 @@ input.checkbox {
 .draggable.dragging {
   opacity: 0.5;
 }
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-group .list-group-item {
+  border-bottom: 1px solid #ccc;
+}
+.list-group .list-group-item .handle {
+  width: 50px;
+}
+.list-group .list-group-item .thumbnail {
+  padding: 0px 10px;
+}
+.list-group .list-group-item .thumbnail img {
+  width: 50px;
+  border-radius: 50%;
+}
+.list-group .list-group-item .details {
+  flex: 1;
+}
+.list-group .list-group-item .details h2 {
+  font-size: 16px;
+  color: #111;
+  padding: 0px 5px 3px;
+}
+.list-group .list-group-item .details p {
+  color: #555;
+  font-size: 14px;
+  padding: 0px 7px;
+}
+.list-group .list-group-item .btn {
+  width: 50px;
+}
+.list-group .list-group-item .btn i.fa {
+  color: #aaa;
+}
+.list-group .list-group-item .btn:hover i.fa {
+  color: #00acee;
+}
