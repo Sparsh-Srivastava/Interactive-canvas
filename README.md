@@ -4,6 +4,9 @@
 
 - HTML, CSS, Javascript
 
+## External Libraries Used - 
+- Sortable JS
+
 ## Like This?? Star ⭐ this Repo.
 
 [![ForTheBadge uses-git](http://ForTheBadge.com/images/badges/uses-git.svg)](https://github.com/Sparsh-Srivastava/Interactive-canvas)
